@@ -5,7 +5,7 @@ function toggLeMode() {
 
   //pegar a tag img
   const img = document.querySelector('#profile img')
-  //substituir a imagem
+  //substituir a imagemcj
   if (html.classList.contains('light')) {
   // se tiver light mode, adicionar a imagem light
    img.setAttribute('src', './Avatar.png')
