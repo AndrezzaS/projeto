@@ -30,7 +30,10 @@
 
  body {
    background: var(--bg-ulr) no-repeat top center/cover;
+   height: 100vh;
+
 }
+
 body * {
   font-family: 'inter', sans-serif;
   color: var(--text-color);
@@ -39,7 +42,8 @@ body * {
 
 
 #container {
-  width: 360px;
+  width: 100px;
+  max-width: 588px;
   margin: 56px auto 0px;
   padding: 0 24px;
 }
@@ -169,4 +173,14 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+/* media  queries */
+@media (max-width: 700px) {
+  :root {
+    --bg-ulr: url(./assets/-nome2.jpg); 
+  }
+  .light  {
+    --bg-ulr: url(./assets/-nome1.jpg);
+}
 }
